@@ -16,7 +16,7 @@ app.use(express.json());
 // Start server
 app.listen(port, () => {
   console.log("Server running on port %PORT%".replace("%PORT%", port))
-  console.log("Visit 'http://localhost:3000/app' to start playing!");
+  console.log("Visit 'http://localhost:3000/' to start playing!");
 });
 
 // READ (HTTP method GET) at root endpoint /app/ 
@@ -29,8 +29,14 @@ app.get("/scramble", (req, res) => {
     res.sendFile(__dirname + '/scramble.html');
   });
 
+app.get("/unscramble", (req, res) => {
+    res.sendFile(__dirname + '/unscramble.html');
+  });
+
 // Default response for any other request
 app.use(function (req, res) {
     res.json({ "message": "Endpoint not found. (404)" });
     res.status(404);
   });
+
+print(list[0])

@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #f9f7f1;">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale:1.0">
-    <title>Scramble!</title>
-    <link rel="stylesheet" href="/styles.css">
+    <meta charset="utf-8">
+    <title>Scramble</title>
+    <link rel="stylesheet" href="/unscramble.css">
     <link rel="icon" href="icon.svg" type="image/x-icon">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    </style>
+    <body>
+      <div style="line-height:70px;border: 3px double #2f2f2f;height:90vh">
+        <h1 style="font-family:'Playfair Display', serif; font-weight: 900; 
+        font-size:90px;text-transform: uppercase;line-height:72px;text-align: center;margin-top:15vh;
+        letter-spacing:25px ">`${scramble()}`</h1>
+        <div style="align-items: center; display:flex; flex-direction: column;justify-content: space-between">
+          <input type="text" style="border: 3px double #2f2f2f; height:70px; width:200px;margin:30px; 
+          font-family:'Playfair Display', serif ; letter-spacing:10px;font-size:25px;text-align: center;">
+          <button onclick="location.href='http://localhost:3000/unscramble';"type="submit" style="background-color: #2f2f2f; 
+          border: #2f2f2f;
+          color: #f9f7f1;
+          text-decoration: none;
+          font-size: 25px;
+          font-family: 'Playfair Display', serif;
+          border-radius: 8px;
+          height: 10%;
+          width: 15%;">Submit Guess</button>
+        </div>
+      </div>
+    </body>
   </head>
-  <body>
-      <!-- this is where we will set up the web page -->
-  </body>
-</html>
+</html> 
 
-<script>
-    // this is where we will put the code for the webpage's functionality 
-    // using JavaScript 
-    // TO-DO: figure out how we can get our functionality to interact with Haven's python code ? 
+<script src="js/script.js">
 </script>

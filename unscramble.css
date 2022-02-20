@@ -1,0 +1,18 @@
+.title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 72px;
+    margin-left: 17%;
+    margin-top: 10vh;
+}
+
+* {
+    background-color: #f9f7f1;
+}
+.home-page {
+    line-height: 70px;
+    border: 3px double #2f2f2f;
+    height: 90vh;
+}

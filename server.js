@@ -7,9 +7,6 @@ const app = express();
 // set our server port
 const port = 3000; 
 
-//Import PythonShell module.
-const {PythonShell} =require('python-shell');
-
 // app.use(cors()); 
 
 // Make Express use its own built-in body parser
@@ -41,5 +38,3 @@ app.use(function (req, res) {
     res.json({ "message": "Endpoint not found. (404)" });
     res.status(404);
   });
-
-print(list[0])

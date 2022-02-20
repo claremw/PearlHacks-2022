@@ -14,9 +14,9 @@
         font-size:90px;text-transform: uppercase;line-height:72px;text-align: center;margin-top:15vh;
         letter-spacing:25px ">urrsvivo</h1>
         <div style="align-items: center; display:flex; flex-direction: column;justify-content: space-between">
-          <input type="text" style="border: 3px double #2f2f2f; height:70px; width:200px;margin:30px; 
+          <input id="my-text" type="text" style="border: 3px double #2f2f2f; height:70px; width:200px;margin:30px; 
           font-family:'Playfair Display', serif ; letter-spacing:10px;font-size:25px;text-align: center;">
-          <button onclick="location.href='http://localhost:3000/unscramble';"type="submit" style="background-color: #2f2f2f; 
+          <button onclick="myFunction()"; style="background-color: #2f2f2f; 
           border: #2f2f2f;
           color: #f9f7f1;
           text-decoration: none;
@@ -31,5 +31,15 @@
   </head>
 </html> 
 
-<script src="js/script.js">
-</script>
+<script>
+      
+  // Here the value is stored in new variable x 
+  function myFunction() {
+      var x = document.getElementById("my-text").value;
+      if (x == "survivor") {
+        location.href='http://localhost:3000/unscramble'
+      } else {
+        alert("incorrect")
+      }
+  }
+  </script>
